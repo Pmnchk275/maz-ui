@@ -22,8 +22,7 @@
     "build:css:compile": "gulp compile --gulpfile build/gulpfile.js",
     "build:scss:compile": "gulp buildScssLibrary --gulpfile build/gulpfile.js",
     "gen:docs": "vuese gen && npm run lint:md:fix",
-    "pre-publish": "npm run lint:fix && npm i && npm run build",
-    "pre-commit": "npm run lint:fix && npm i && npm run build"
+    "pre-publish": "npm run lint:fix && npm i && npm run build"
   },
   "lint-staged": {
     "*.{js,vue}": "npm run lint:js",
@@ -101,7 +100,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LouisMazel/maz-ui.git"
+    "url": "git+https://github.com/Pmnchk275/maz-ui.git"
   },
   "license": "MIT",
   "types": "index.d.ts"
