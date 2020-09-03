@@ -352,9 +352,6 @@ export default {
       }
 
       await getParsePhoneNumberFromString(payload)
-      console.log('YES1', payload.countryCode, payload.phoneNumber)
-      console.log('YES2', payload.countryCode === 'RU' ? this.results.isValid ? this.results.formatNational : payload.phoneNumber : this.results.formatNational || payload.phoneNumber)
-      console.log('YES3', new AsYouType().input(payload.phoneNumber))
       await getAsYouTypeFormat({
         ...payload,
         phoneNumber: payload.countryCode === 'RU' ? this.results.isValid ? this.results.formatNational : payload.phoneNumber : this.results.formatNational || payload.phoneNumber
