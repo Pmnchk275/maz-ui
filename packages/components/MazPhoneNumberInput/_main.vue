@@ -269,13 +269,13 @@ export default {
     }
   },
   watch: {
-    // value: {
-    //   handler (phoneNumber, oldPhoneNumber) {
-    //     if (phoneNumber === oldPhoneNumber) return
-    //     this.buildResults({ phoneNumber, countryCode: this.countryCode })
-    //   },
-    //   immediate: true
-    // },
+    value: {
+      handler (phoneNumber, oldPhoneNumber) {
+        if (phoneNumber === oldPhoneNumber || phoneNumber === this.asYouTypeNumber) return
+        this.buildResults({ phoneNumber, countryCode: this.countryCode })
+      },
+      immediate: true
+    },
     defaultCountryCode (newValue, oldValue) {
       if (newValue === oldValue) return
       this.setLocale(newValue)
