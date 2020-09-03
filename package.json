@@ -22,7 +22,8 @@
     "build:css:compile": "gulp compile --gulpfile build/gulpfile.js",
     "build:scss:compile": "gulp buildScssLibrary --gulpfile build/gulpfile.js",
     "gen:docs": "vuese gen && npm run lint:md:fix",
-    "pre-publish": "npm run lint:fix && npm i && npm run build"
+    "pre-publish": "npm run lint:fix && npm i && npm run build",
+    "pre-install": "npm run lint:fix && npm i && npm run build"
   },
   "lint-staged": {
     "*.{js,vue}": "npm run lint:js",
