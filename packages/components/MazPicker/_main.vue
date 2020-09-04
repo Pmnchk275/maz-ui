@@ -6,7 +6,6 @@
     :class="[{
       'maz-is-dark': dark
     }, `maz-picker--${color}`]"
-    @blur.capture="closePicker($event, 'blur')"
   >
     <MazInput
       v-if="!inline"
