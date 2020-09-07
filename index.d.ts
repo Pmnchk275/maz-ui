@@ -1,1 +1,1 @@
-declare module 'maz-ui';
+declare module 'maz-ui-fix';
